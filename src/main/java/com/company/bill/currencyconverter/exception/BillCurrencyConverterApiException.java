@@ -1,7 +1,9 @@
 package com.company.bill.currencyconverter.exception;
 
-public class BillCurrencyConverterApiException extends RuntimeException{
+import java.io.Serial;
 
+public class BillCurrencyConverterApiException extends RuntimeException{
+@Serial
     private static final long serialVersionUID = 1L;
 
     public BillCurrencyConverterApiException(String msg){

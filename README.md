@@ -29,6 +29,8 @@ payable amount for a bill in a specified currency after applying applicable disc
 The API endpoint http://localhost:8080/api/calculate allows users to submit a bill in one currency
 and get the payable amount in another currency.
 
+Third Party API endpoint used: https://v6.exchangerate-api.com/v6
+
 ## Features
 
 - Java 21

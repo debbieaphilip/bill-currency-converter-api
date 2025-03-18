@@ -43,8 +43,8 @@ class ExchangeRateResponseTest {
 
         assertNotNull(rates);
         assertEquals(1, rates.size());
-        assertEquals("EUR", rates.get(0).getCurrency());
-        assertEquals(new BigDecimal("0.85"), rates.get(0).getRate());
+        assertEquals("EUR", rates.getFirst().getCurrency());
+        assertEquals(new BigDecimal("0.85"), rates.getFirst().getRate());
     }
 
 }

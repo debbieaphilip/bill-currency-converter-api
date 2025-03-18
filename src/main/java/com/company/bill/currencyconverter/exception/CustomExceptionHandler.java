@@ -15,7 +15,7 @@ public class CustomExceptionHandler {
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     @ExceptionHandler({ThirdPartyApiException.class})
     public ErrorResponse handleThirdPartyException(ThirdPartyApiException ex){
-        return new ErrorResponse(HttpStatus.INTERNAL_SERVER_ERROR, "Invalid response received from API");
+        return new ErrorResponse(HttpStatus.INTERNAL_SERVER_ERROR, "Invalid response received from API: "+ex.getMessage());
     }
 
     @ResponseBody
